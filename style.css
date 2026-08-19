@@ -1,0 +1,189 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f4f7fb;
+color:#333;
+}
+
+header{
+background:#0d1b2a;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 80px;
+position:sticky;
+top:0;
+}
+
+.logo{
+color:white;
+font-size:30px;
+font-weight:bold;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+font-size:18px;
+}
+
+nav a:hover{
+color:#00b4ff;
+}
+
+.hero{
+height:90vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:linear-gradient(135deg,#001f3f,#0077ff);
+color:white;
+}
+
+.hero h1{
+font-size:60px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:20px;
+width:70%;
+margin:auto;
+margin-bottom:30px;
+line-height:35px;
+}
+
+.hero a{
+background:white;
+color:#0077ff;
+padding:15px 35px;
+text-decoration:none;
+border-radius:40px;
+font-weight:bold;
+}
+
+.hero a:hover{
+background:#00b4ff;
+color:white;
+}
+
+section{
+padding:80px;
+}
+
+section h2{
+text-align:center;
+margin-bottom:50px;
+font-size:40px;
+color:#001f3f;
+}
+
+.container{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+}
+
+.card{
+background:white;
+width:320px;
+padding:30px;
+border-radius:15px;
+box-shadow:0 5px 20px rgba(0,0,0,.1);
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card h3{
+margin-bottom:20px;
+color:#0077ff;
+}
+
+.card p{
+line-height:28px;
+}
+
+form{
+width:500px;
+margin:auto;
+display:flex;
+flex-direction:column;
+}
+
+input,
+textarea{
+padding:15px;
+margin:10px 0;
+border:1px solid #ccc;
+border-radius:8px;
+font-size:16px;
+}
+
+textarea{
+height:150px;
+resize:none;
+}
+
+button{
+padding:15px;
+background:#0077ff;
+color:white;
+border:none;
+border-radius:8px;
+font-size:18px;
+cursor:pointer;
+}
+
+button:hover{
+background:#005fd4;
+}
+
+footer{
+background:#0d1b2a;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+padding:20px;
+}
+
+nav{
+margin-top:15px;
+}
+
+nav a{
+display:block;
+margin:10px 0;
+}
+
+.hero h1{
+font-size:40px;
+}
+
+.hero p{
+width:90%;
+font-size:18px;
+}
+
+form{
+width:100%;
+}
+
+}
